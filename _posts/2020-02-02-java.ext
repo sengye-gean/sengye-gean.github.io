@@ -1,0 +1,30 @@
+---
+title: "Java 상속 복습"
+date: 2020-02-02 22:00:00 -0400
+categories: none
+---
+
+객체 지향 프로그래밍 (Object Oriented Programming, OOP)
+
+* 객체 지향 언어 4대 특징
+
+<A PIE>
+- 추상화(Abstraction)
+- 다형성(Polymorphism) : 부모 타입으로 다양한 형태 자식 객체 생성, 참조 가능. 
+- 상속(Inheritance)
+- 캡슐화(Encapsulation) : 데이터 구조 + 데이터 다루는 방법 묶기
+
+
+* 상속받은 건 상속 받은 것에다 자기 만의 것을 추가로 쌓아감.
+* 클래스 상속으로 효율성 높이려고
+* 원래 상속관계는 is-a 관계 성립할 때만 상속관계 하려고 함. ㅇ
+
+<is-a 관계>
+"하위 클래스 is a 상위 클래스" 명제가 참일 때
+
+* 상속시 키워드는 extends
+
+​```java
+public class Student extends Person{}
+​```
+
