@@ -11,18 +11,18 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
+# remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Sengye Blog"
+title                    : "Gean Sengye"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Sengye Gean Blog"
-description              : "An amazing website."
-url                      : "https://sengye-gean.github.io"
-baseurl                  : ""
+name                     : "."
+description              : "배운 거 정리"
+url                      : "https://sengye-gean.github.io/"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/blog"#  the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -39,9 +39,9 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : dark # "light" (default), "dark"
+    colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : github-dark # "github-light" (default), "github-dark"
+    theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
@@ -56,9 +56,9 @@ staticman:
     email                : # "md5"
   generatedFields:
     date:
-      type               : date # "date"
+      type               : # "date"
       options:
-        format           : '%B %d, %Y' # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
   endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
 reCaptcha:
   siteKey                :
@@ -107,9 +107,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Sengye"
+  name             : "."
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "프로그래밍 공부"
+  bio              : "I am an **amazing** person."
   location         : "Somewhere"
   email            :
   links:
@@ -223,7 +223,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: Asia/Tokyo # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -287,11 +287,9 @@ defaults:
       path: ""
       type: posts
     values:
-      layout:
+      layout: single
       author_profile: true
       read_time: true
       comments: # true
-      share: false
+      share: true
       related: true
-      
-    
